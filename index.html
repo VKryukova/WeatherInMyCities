@@ -59,7 +59,7 @@
 
       function updateTemp(idCity, data) {
         const temp = document.getElementById(idCity);
-        temp.innerHTML = data.current.temp_c + "°C";
+        temp.innerHTML = Math.floor(data.current.temp_c) + "°C";
       }
 
       weather();
