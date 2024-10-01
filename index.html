@@ -41,7 +41,7 @@
     <script>
       function weather() {
         const url =
-          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=";
+          "https://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=";
         const cities = ["Kaliningrad", "Ryazan", "Voronezh", "Moscow", "Tomsk"];
         const urls = cities.map((city) => url + city);
         urls.forEach((url, index) => {
