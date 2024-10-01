@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Температура</title>
   </head>
   <body>
@@ -37,17 +40,11 @@
     </div>
     <script>
       function weather() {
-        const apiUrl = [
-          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=Kaliningrad",
-          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=Ryazan",
-          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=Voronezh",
-          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=Moscow",
-          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=Tomsk",
-        ];
+        const url =
+          "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=";
         const cities = ["Kaliningrad", "Ryazan", "Voronezh", "Moscow", "Tomsk"];
-        //const url = "http://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=";
-
-        apiUrl.forEach((url, index) => {
+        const urls = cities.map((city) => url + city);
+        urls.forEach((url, index) => {
           fetch(url)
             .then((response) => response.json())
             .then((data) => {
@@ -65,7 +62,7 @@
         temp.innerHTML = data.current.temp_c + "°C";
       }
 
-      weather(); 
+      weather();
     </script>
   </body>
 </html>
