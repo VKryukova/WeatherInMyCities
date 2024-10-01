@@ -71,7 +71,6 @@ body {
     .card {
         font-size: 0.7em;
     }
-
 }
 @media (max-width: 600px) {
     .blocks {
@@ -81,7 +80,8 @@ body {
         padding-top: 1%;
     }
     .head {
-        font-size: 1em;
+        font-size: 1.05em;
+        font-weight: 700;
     }
     .card {
         display: flex;
