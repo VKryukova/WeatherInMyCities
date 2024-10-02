@@ -36,12 +36,21 @@
           <div class="cityName">Томск</div>
           <div class="temperature"><p id="Tomsk"></p></div>
         </div>
+        <div class="card" id="spb">
+          <div class="cityName">Санкт-Петербург</div>
+          <div class="temperature"><p id="Saint-Petersburg"></p></div>
+        </div>
+        <div class="card">
+          <div class="cityName">Ярославль</div>
+          <div class="temperature"><p id="Yaroslavl"></p></div>
+        </div>
       </div>
     </div>
     <script>
       function weather() {
         const url =
           "https://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=";
+        const cities = ["Kaliningrad", "Ryazan", "Voronezh", "Moscow", "Tomsk", "Saint-Petersburg", "Yaroslavl"];
         const cities = ["Kaliningrad", "Ryazan", "Voronezh", "Moscow", "Tomsk"];
         const urls = cities.map((city) => url + city);
         urls.forEach((url, index) => {
@@ -66,3 +75,4 @@
     </script>
   </body>
 </html>
+
