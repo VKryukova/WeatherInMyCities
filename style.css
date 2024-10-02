@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8% 10%; 
+    padding: 8% 5%; 
 }
 
 .head {  
@@ -34,7 +34,7 @@ body {
 }
 
 .card {
-    width: 18%;
+    width: 13%;
     height: 50%;
     border-radius: 2em;
     background: rgba(255, 255, 255, 0.9);
@@ -50,6 +50,9 @@ body {
     font-size: 2em; 
     padding: 5% 0 10% 0;
 }
+#spb{
+    padding-top: 3.1%;
+}
 
 @media (max-width: 1200px) {
     .head {
@@ -63,6 +66,9 @@ body {
     .head {
         font-size: 2em;
     }
+    #spb{
+        padding-top: 2.8%;
+    }
 }
 @media (max-width: 800px) {
     .head {
@@ -71,13 +77,17 @@ body {
     .card {
         font-size: 0.7em;
     }
+    #spb{
+        padding-top: 2.7%;
+    }
+
 }
 @media (max-width: 600px) {
     .blocks {
         flex-direction: column;
         justify-content: space-between;
-        height: 73vh;
-        padding-top: 1%;
+        height: 83vh;
+        padding-top: 0;
     }
     .head {
         font-size: 1.05em;
@@ -91,7 +101,7 @@ body {
         padding: 0 10% 0 10%;
         font-size: 1.2em;
         width: 80%;
-        height: 18%;
+        height: 13%;
         border-radius: 1.5em;
     }
     .temperature {
@@ -101,7 +111,11 @@ body {
     }
     
     .container {
-        height: 80vh;
+        height: 90vh;
+        padding: 4% 10%; 
+    }
+    #spb{
+        padding-top: 0;
     }
 }
 
