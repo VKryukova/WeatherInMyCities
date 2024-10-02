@@ -97,9 +97,9 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 10% 0 10%;
+        padding: 0 8% 0 8%;
         font-size: 1.2em;
-        width: 80%;
+        width: 85%;
         height: 13%;
         border-radius: 1.5em;
     }
@@ -127,8 +127,11 @@ body {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 370px) {
     .head {
         font-size: 0.3em;
+    }
+    .card {
+        text-align: left;
     }
 }
