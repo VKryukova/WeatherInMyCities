@@ -51,7 +51,6 @@
         const url =
           "https://api.weatherapi.com/v1/current.json?key=53c082a7085540a98e6200508242709&q=";
         const cities = ["Kaliningrad", "Ryazan", "Voronezh", "Moscow", "Tomsk", "Saint-Petersburg", "Yaroslavl"];
-        const cities = ["Kaliningrad", "Ryazan", "Voronezh", "Moscow", "Tomsk"];
         const urls = cities.map((city) => url + city);
         urls.forEach((url, index) => {
           fetch(url)
@@ -75,4 +74,3 @@
     </script>
   </body>
 </html>
-
